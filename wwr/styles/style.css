@@ -260,3 +260,47 @@ main section img {
         margin-top: 25px;
     }
 }
+.rivers-section {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: grid;
+  gap: 60px;
+}
+.page-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.river {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.river-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  background: #ddd;
+}
+
+.river-text h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.river-text p {
+  text-align: left;
+  line-height: 1.5;
+  max-width: 95%;
+}
+/* Responsive */
+@media (max-width: 750px) {
+  .river {
+    grid-template-columns: 1fr;
+  }
+}
